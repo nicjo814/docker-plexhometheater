@@ -4,12 +4,15 @@ FROM linuxserver/baseimage
 
 # specify apt packages to install
 ENV BUILD_APTLIST=""
-ENV APTLIST="lshw"
+ENV APTLIST="
+lshw \
+plexhometheater \
+"
 
 # add repositories
-#RUN \
-#add-apt-repository 'deb http://lon1.mirrors.digitalocean.com/mariadb/repo/10.1/ubuntu trusty main' && \
-#apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db && \
+RUN \
+# plex home theater
+add-apt-repository ppa:plexapp/plexht
 
 # install packages
 RUN apt-get update -q && \
@@ -26,8 +29,8 @@ rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 # add some files 
 #ADD services/ /etc/service/
 #ADD defaults/ /defaults/
-#ADD init/ /etc/my_init.d/
-#RUN chmod -v +x /etc/service/*/run /etc/my_init.d/*.sh && \
+ADD init/ /etc/my_init.d/
+RUN chmod -v +x /etc/service/*/run /etc/my_init.d/*.sh && \
 
 # expose ports
 #EXPOSE 443
