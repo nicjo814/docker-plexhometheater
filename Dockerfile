@@ -6,8 +6,7 @@ ENV XAUTHORITY="/tmp/.docker.xauth"
 
 # specify apt packages to install
 ENV BUILD_APTLIST=""
-ENV APTLIST="
-lshw \
+ENV APTLIST="lshw \
 plexhometheater"
 
 # add repositories
