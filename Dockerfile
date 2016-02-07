@@ -3,6 +3,8 @@ FROM linuxserver/baseimage
 # set env variables
 ENV DISPLAY=":0"
 ENV XAUTHORITY="/tmp/.docker.xauth"
+ENV XSOCK="/tmp/.X11-unix"
+ENV XAUTH="/tmp/.docker.xauth"
 
 # specify apt packages to install
 ENV BUILD_APTLIST=""
