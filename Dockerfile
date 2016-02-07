@@ -36,4 +36,4 @@ RUN chmod -v +x /etc/my_init.d/*.sh
 #EXPOSE 443
 
 # set volumes
-VOLUME /opt/plexhometheater/share
+# VOLUME /opt/plexhometheater/share
