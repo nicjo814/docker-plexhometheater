@@ -1,6 +1,7 @@
 FROM linuxserver/baseimage
 
 # set env variables
+ENV DISPLAY=":0"
 
 # specify apt packages to install
 ENV BUILD_APTLIST=""
