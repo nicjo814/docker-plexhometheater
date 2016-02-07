@@ -4,7 +4,7 @@ FROM linuxserver/baseimage
 
 # specify apt packages to install
 ENV BUILD_APTLIST=""
-ENV APTLIST=""
+ENV APTLIST="lshw"
 
 # add repositories
 #RUN \
