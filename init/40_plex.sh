@@ -2,4 +2,4 @@
 
 apt-get update
 apt-get upgrade
-#/usr/bin/plexhometheater.sh
+/usr/bin/plexhometheater.sh
