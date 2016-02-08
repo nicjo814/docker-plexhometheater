@@ -7,7 +7,7 @@ Plex Home Theater Docker Image
 
 ## Usage
 ```
-docker run -v /tmp:/tmp -v <path of config>:/usr/share/... --name=plexhometheatre nicjo814/docker-plexhometheatre
+docker run -v /tmp:/tmp -v <path of config>:/opt/plexhometheater/share --name=plexhometheater nicjo814/docker-plexhometheater
 ```
 
 **Parameters**
