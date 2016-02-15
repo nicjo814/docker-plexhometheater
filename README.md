@@ -11,4 +11,4 @@ docker run -v /tmp:/tmp -v <path of config>:/root/.plexht --name=plexhometheater
 ```
 
 **Parameters**
-* `-v /config` - config files for Plex Home Theater
+* `-v /config` - config files for Plex Home Theater container
