@@ -1,4 +1,4 @@
-# docker-plexhometheatre
+# docker-plexhometheater
 Plex Home Theater Docker Image
 
 ## Prerequisites
