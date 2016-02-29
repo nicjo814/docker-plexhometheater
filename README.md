@@ -7,7 +7,7 @@ Plex Home Theater Docker Image
 
 ## Usage
 ```
-docker run -v /tmp:/tmp -v <path of config>:/root/.plexht --name=plexhometheater nicjo814/docker-plexhometheater
+docker run -d --privileged -v /tmp:/tmp -v <path of config>:/root/.plexht --name=plexhometheater nicjo814/docker-plexhometheater
 ```
 
 **Parameters**
